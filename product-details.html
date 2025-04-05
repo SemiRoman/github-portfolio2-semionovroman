@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-grid.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ozeum - Product Details</title>
+</head>
+
+<body>
+    <section class="product-details">
+        <div class="product-info">
+
+        </div>
+    </section>
+
+    <script>
+        function updateQuantity(operation) {
+            let selectedProduct = JSON.parse(localStorage.getItem("selectedProduct"));
+
+            if (operation === 'increment') {
+                selectedProduct.quantity++;
+            } else if (operation === 'decrement' && selectedProduct.quantity > 1) {
+                selectedProduct.quantity--;
+            }
+
+            selectedProduct.totalPrice = selectedProduct.quantity * selectedProduct.reducedPrice;
+            localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+            document.getElementById('quantity').innerText = selectedProduct.quantity;
+            document.querySelector('.total-price').innerText = `$${selectedProduct.totalPrice.toFixed(2)}`;
+        }
+
+        window.addEventListener("DOMContentLoaded", () => {
+            let selectedProduct = JSON.parse(localStorage.getItem("selectedProduct"));
+
+            function swapImages(newSrc, imgElement) {
+                const currentBigImage = document.querySelector('.big-image');
+                const currentBigImageSrc = currentBigImage.src;
+
+                currentBigImage.src = newSrc;
+
+                imgElement.src = currentBigImageSrc;
+
+                document.querySelectorAll('.minipics img').forEach(img => img.classList.remove('selected'));
+
+                imgElement.classList.add('selected');
+            }
+
+            function displayProductDetails(product) {
+                const productInfoContainer = document.querySelector(".product-info");
+
+                productInfoContainer.innerHTML = `
+        <div class="object-container">
+            <div class="pictures">
+                <div class="bigpic">
+                    <img class="big-image" src="${product.imageSrc[0]}" />
+                </div>
+                <div class="minipics">
+                    ${Array.isArray(product.imageSrc) ? product.imageSrc.map((imgSrc, index) => `
+                        <div class="minipic">
+                            <img src="${imgSrc}" onclick="swapImages('${imgSrc}', this)" class="${index === 0 ? 'selected' : ''}" />
+                        </div>
+                    `).join('') : ''}
+                </div>
+            </div>
+            <div class="info">
+                <div class="info-alignment">
+                    <h1>${product.title}</h1>
+                    <a href="shop.html"><</a>
+                </div>
+                <hr>
+                <h2><span class="bigger">Price </span> $${product.reducedPrice.toFixed(2)}</h2>
+                <h3><span class="lighter">Description</span> <br><br>${product.description}</h3>
+                <div class="info-alignment">
+                    <div class="pad-left-info">
+                        <p class="quantity"><span class="lighter">Quantity</span> <br><br></p>
+                        <div class="quantity-buttons">
+                            <button onclick="updateQuantity('decrement')">-</button>
+                            <p class="nr"><span id="quantity">${product.quantity}</span></p>
+                            <button onclick="updateQuantity('increment')">+</button>
+                        </div>
+                    </div>
+                    <div class="sizes">
+                        <p><span class="lighter">Sizes</span> <br><br></p>
+                        <div>${product.sizes.map(size => `<span>${size}</span>`).join('')}</div>
+                    </div>
+                </div>
+                <div class="tot-price">
+                    <p><span class="lighter">Total Price</span> </p>
+                    <div class="total-price">$${product.totalPrice ? product.totalPrice.toFixed(2) : 'N/A'}</div>
+                </div>
+                <div class="info-tags">
+                    <p><span class="lighter">Tags</span></p>
+                    <div>${product.categories.map(categories => `<span>${categories}</span>`).join('')}</div>
+                </div>
+                <div class="info-buy-button">
+                    Buy
+                </div>
+            </div>
+        </div>
+    `;
+            }
+
+
+            displayProductDetails(selectedProduct);
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.about-us-header {
+    text-align: center;
+    background-image: url(/Lucru_Individual_1/images/shop-background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.path2 {
+    padding: 100px 0;
+    text-align: center;
+    color: #EBE9CF;
+}
+
+.lower-simple {
+    padding: 0 27px;
+    border: 1px solid #949380;
+    border: none;
+    background-color: rgba(69, 69, 69, 0.1);
+    backdrop-filter: blur(3px);
+    text-align: center;
+}
+
+.lower-nav-simple {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.lower-nav-simple a {
+    display: inline-block;
+    font-size: 14px;
+    color: #EBE9CF;
+    text-decoration: none;
+    padding: 20px 13px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lower-nav-simple2 a {
+    padding: 20px 16px;
+}
+
+.lower-nav-simple .current {
+    color: #C9A050;
+}
+
+.logo {
+    display: inline;
+    padding-top: 18px;
+}
+
+.logo img {
+    padding-top: 18px;
+    padding-left: 205px;
+    padding-right: 200px;
+}
+
+.lower-nav-container-simple {
+    display: inline-block;
+}
+
+.lower-nav-simple a:hover {
+    background-color: rgba(250, 229, 189, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.lower-nav-simple li:hover,
+.lower-nav2-simple2 li:hover {
+    background-color: rgba(250, 229, 189, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.main {
+    background-image: url(/Lucru_Individual_1/images/background-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    max-width: 500px;
+    padding: 120px 80px;
+}
+
+.main .info h1 {
+    color: #13130D;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.arrow-button {
+    padding: 5px 8px;
+    font-size: 20px;
+    border: 1px solid #949380;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.arrow-button:hover {
+    background-color: #626262;
+    color: white;
+}
+
+.main .info p {
+    padding-top: 30px;
+    font-family: "Cardo", sans-serif;
+    color: #6D6D65;
+    font-size: 23px;
+}
+
+.wid90 {
+    padding-top: 80px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.what-nav h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.what-nav a {
+    color: #626262;
+}
+
+.short-txt {
+    padding-top: 30px;
+}
+
+.main2 {
+    background-color: #F7F6EC;
+}
+
+.main2 .what-nav {
+    text-align: justify
+}
+
+.main2 .what-nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.main2 ul li {
+    display: inline-block;
+    vertical-align: top;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.main2 ul li:last-child {
+    margin-right: 0;
+}
+
+.main2 hr {
+    color: #13130D;
+}
+
+.main2 p {
+    max-width: 780px;
+    font-family: "Cardo", sans-serif;
+    color: #6D6D65;
+}
+
+.padding {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.genres {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.genres li {
+    display: block;
+    margin-right: 20px;
+    text-align: center;
+    padding: 0 13px;
+}
+
+.genres li h2 {
+    padding-top: 65px;
+}
+
+.circle {
+    border: 1px solid #6D6D65;
+    color: #C9A050;
+    font-size: 40px;
+    border-radius: 50%;
+    padding: 50px 53px;
+    text-align: center;
+}
+
+.circle2 {
+    padding: 50px 60px;
+}
+
+.welcome {
+    background-image: url(/Lucru_Individual_1/images/background2-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.al-center {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.al-center h1 {
+    color: #EBE9CF;
+    font-size: 50px;
+}
+
+.al-center a {
+    color: #EBE9CF;
+}
+
+.al-center p {
+    color: #949380;
+    font-size: 20px;
+    font-family: "Cardo", sans-serif;
+    padding-top: 20px;
+}
+
+.more li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.more {
+    padding-top: 20px;
+}
+
+.more p {
+    color: #EBE9CF;
+}
+
+.more li p {
+    margin: 0;
+    display: inline;
+}
+
+.pad-lf {
+    padding-left: 30px;
+}
+
+.genres img {
+    max-width: 370px;
+    max-height: 237px;
+}
+
+.staff-cards li {
+    text-align: left;
+    padding-right: 13px;
+    padding-left: 0;
+}
+
+.staff-cards .pl {
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.staff-cards li h2 {
+    padding-top: 10px;
+}
+
+.staff-cards li p {
+    padding-bottom: 30px;
+}
+
+.wid95 {
+    width: 95%;
+}
+
+.footer-container-nothing {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.pad-left {
+    padding-right: 200px;
+}
+
+.footer-col {
+    padding-right: 140px;
+}
+
+.nope {
+    padding-right: 0;
+}
+
+.footer-container-nothing li {
+    display: inline-block;
+}
+
+.block li {
+    display: block;
+    padding-top: 10px;
+}
+
+.logo2 {
+    padding-bottom: 50px;
+}
+
+.footer-nav-nothing {
+    width: 70%;
+    padding-left: 220px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.footer-nav-nothing ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.footer-nav-nothing ul li {
+    display: inline-block;
+}
+
+.footer-nav-nothing a {
+    color: white;
+}
+
+.footer-nothing li {
+    display: inline-block;
+    width: 20px;
+}
+
+.footer-nav-nothing ul li:last-child {
+    margin-right: 682px;
+}
+
+.lower-phone-nothing {
+    padding: 0 27px;
+    border-bottom: none;
+    background-color: rgba(69, 69, 69, 0.1);
+    backdrop-filter: blur(3px);
+    position: relative;
+    display: none;
+}
+
+@media only screen and (max-width: 426px) {
+    .main {
+        background-image: url(/Lucru_Individual_1/images/background-about.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+
+    .logo-not{
+        padding: 18px 0 10px 10px;
+        margin-right: 152px;
+    }
+
+    label.open-menu{
+        padding: 0 20px 10px 65px ;
+        max-width: 50px;
+    }
+
+    .lower-simple {
+        display: none;
+    }
+
+    .lower-phone-nothing {
+        border: none;
+        background-color: rgba(69, 69, 69, 0.1);
+        backdrop-filter: blur(3px);
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 26px;
+    }
+
+    .lower-nav-phone-nothing {
+        background-color: rgba(21, 20, 20, 0.99);
+        backdrop-filter: blur(2px);
+        position: fixed;
+        width: 100%;
+        height: 63vh;
+        font-size: 20px;
+        left: 0;
+        top: 60px;
+        left: -110%;
+        z-index: 100;
+        text-align: left;
+        transition: all .2s ease-in-out;
+        padding: 20px 0;
+    }
+    .lower-nav-phone-nothing ul{
+        padding-left: 50px;
+    }
+
+    .lower-nav-phone-nothing a {
+        display: inline-block;
+        font-size: 14px;
+        color: #EBE9CF;
+        text-decoration: none;
+        padding: 15px 13px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #check:checked~.lower-nav-phone-nothing {
+        left: 0;
+        top: 60px;
+    }
+
+    .lower-nav-phone-nothing .current {
+        color: #C9A050;
+    }
+
+    .lower-phone-nothing img.logo-not,
+    .lower-phone-nothing label.open-menu {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .lower-phone-nothing img.logo-not{
+        padding-bottom: 10px;
+    }
+
+    .lower-phone-nothing label.open-menu{
+       position: absolute;
+       top: 11px;
+       left: 285px;
+    }
+
+    .item-nothing {
+        font-size: 0;
+    }
+
+    .item-nothing li {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: initial;
+        margin-left: 10px;
+    }
+
+    .item-nothing i {
+        color: #949380;
+    }
+
+    .what-nav li{
+        text-align: left;
+    }
+
+    .what-nav li p{
+        font-size: 19px;
+    }
+
+    .short-txt{
+        font-size: 19px;
+    }
+
+    .genres {
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding-top: 60px;
+    }
+
+    .genres li {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        text-align: center;
+        padding: 0 13px;
+    }
+
+    .genres li h2 {
+        padding-top: 65px;
+    }
+
+    .circle {
+        border: 1px solid #6D6D65;
+        color: #C9A050;
+        font-size: 40px;
+        border-radius: 50%;
+        padding: 50px 53px;
+        text-align: center;
+    }
+
+    .circle2 {
+        padding: 50px 60px;
+    }
+
+    .padding {
+        text-align: center;
+        overflow-x: auto; 
+    }
+
+    .more{
+        padding-top: 30px;
+    }
+
+    .footer-container-nothing{
+        width: 100%;
+    }
+
+    .pad-left {
+        padding-right: 20px;
+    }
+
+    .logo2{
+        padding: 10px 0 30px;
+    }
+
+    .footer-col{
+        padding-right: 10px;
+    }
+
+    .footer-nav-nothing {
+        padding: 10px 0 10px 20px;
+        white-space: nowrap; 
+    }
+
+    .footer-nav-nothing ul li:last-child {
+        margin-right: 0;
+    }
+
+    .footer-nothing {
+        max-width: 70px;
+        display: inline-block; 
+        vertical-align: middle; 
+    }
+
+    .footer-nothing li {
+        display: inline;
+    }
+
+    .footer-nothing a, .credits {
+        display: inline-block; 
+        font-size: 13px; 
+        color:#F7F6EC; 
+        text-decoration: none;
+        vertical-align: middle; 
+    }
+
+    .footer-nav-nothing .credits{
+        margin-left: 40px;
+    }
+}
+
+
+
+@media only screen and (min-width: 426px) and (max-width: 769px) {
+    .logo-not{
+        padding: 18px 0 10px 10px;
+        margin-right: 592px;
+    }
+
+    .main {
+        background-image: url(/Lucru_Individual_1/images/background-about.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+    label.open-menu{
+        padding-left: 25px;
+        margin-left: 400px;
+        max-width: 50px;
+    }
+
+    .lower-simple {
+        display: none;
+    }
+
+    .lower-phone-nothing {
+        border: none;
+        background-color: rgba(69, 69, 69, 0.1);
+        backdrop-filter: blur(3px);
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .lower-nav-phone-nothing {
+        background-color: rgba(21, 20, 20, 0.99);
+        backdrop-filter: blur(2px);
+        position: fixed;
+        width: 100%;
+        height: 65vh;
+        font-size: 20px;
+        left: 0;
+        top: 60px;
+        left: -110%;
+        z-index: 100;
+        text-align: left;
+        transition: all .2s ease-in-out;
+        padding: 20px 0;
+    }
+    .lower-nav-phone-nothing ul{
+        padding-left: 50px;
+    }
+
+    .lower-nav-phone-nothing a {
+        display: inline-block;
+        font-size: 14px;
+        color: #EBE9CF;
+        text-decoration: none;
+        padding: 15px 13px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #check:checked~.lower-nav-phone-nothing {
+        left: 0;
+        top: 60px;
+    }
+
+    .lower-nav-phone-nothing .current {
+        color: #C9A050;
+    }
+
+    .lower-phone-nothing img.logo-not,
+    .lower-phone-nothing label.open-menu {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .lower-phone-nothing img.logo-not{
+        padding-bottom: 10px;
+    }
+
+    .lower-phone-nothing label.open-menu{
+       position: absolute;
+       top: 11px;
+       left: 285px;
+    }
+
+    .item-nothing {
+        font-size: 0;
+    }
+
+    .item-nothing li {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: initial;
+        margin-left: 10px;
+    }
+
+    .item-nothing i {
+        color: #949380;
+    }
+
+    .what-nav li{
+        text-align: left;
+    }
+
+    .what-nav li p{
+        font-size: 19px;
+    }
+
+    .short-txt{
+        font-size: 19px;
+    }
+
+    .genres {
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding-top: 60px;
+    }
+
+    .genres li {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        text-align: center;
+        padding: 0 13px;
+    }
+
+    .genres li h2 {
+        padding-top: 65px;
+    }
+
+    .circle {
+        border: 1px solid #6D6D65;
+        color: #C9A050;
+        font-size: 40px;
+        border-radius: 50%;
+        padding: 50px 53px;
+        text-align: center;
+    }
+
+    .circle2 {
+        padding: 50px 60px;
+    }
+
+    .padding {
+        text-align: center;
+        overflow-x: auto; 
+    }
+
+    .more{
+        padding-top: 30px;
+    }
+
+    .footer-container-nothing{
+        width: 100%;
+    }
+
+    .pad-left {
+        padding-left: 40px;
+        padding-right: 130px;
+    }
+
+    .logo2{
+        padding: 10px 0 30px;
+    }
+
+    .footer-col{
+        padding-right: 70px;
+    }
+
+    .footer-nav-nothing {
+        padding: 10px 0 10px 40px;
+        white-space: nowrap; 
+    }
+
+    .footer-nav-nothing ul li:last-child {
+        margin-right: 0;
+    }
+
+    .footer-nothing {
+        max-width: 70px;
+        display: inline-block; 
+        vertical-align: middle; 
+    }
+
+    .footer-nothing li {
+        display: inline;
+    }
+
+    .footer-nothing a, .credits {
+        display: inline-block; 
+        font-size: 13px; 
+        color:#F7F6EC; 
+        text-decoration: none;
+        vertical-align: middle; 
+    }
+
+    .footer-nav-nothing .credits{
+        margin-left: 343px;
+    }
+}
